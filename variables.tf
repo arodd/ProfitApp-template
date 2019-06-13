@@ -1,3 +1,3 @@
 variable "org" {}
-variable "workspace_name" {}
+variable "network_workspace" {}
 variable "environment" {}
