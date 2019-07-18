@@ -1,9 +1,14 @@
-variable "org" {}
-variable "network_workspace" {}
-variable "environment" {}
+variable "org" {
+}
+
+variable "network_workspace" {
+}
+
+variable "environment" {
+}
 
 variable "instance_type" {
-  type = "map"
+  type = map(string)
 
   default = {
     "prod"  = "m5.large"
@@ -11,3 +16,4 @@ variable "instance_type" {
     "dev"   = "t2.micro"
   }
 }
+
